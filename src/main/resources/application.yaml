@@ -1,3 +1,14 @@
 spring:
   application:
     name: Amazing project
+server:
+  port: 8001
+
+logging:
+  file:
+    name: ./logs/my-app.log
+  level:
+    root: INFO
+    com:
+      example:
+        myapp: DEBUG
