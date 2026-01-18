@@ -24,6 +24,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'Deploying the application...'
+                sh "mvn spring-boot:run"
                 // Add your deploy commands here, e.g., sh 'kubectl apply -f deployment.yaml'
             }
         }
