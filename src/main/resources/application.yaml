@@ -12,3 +12,9 @@ logging:
     com:
       example:
         myapp: DEBUG
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
