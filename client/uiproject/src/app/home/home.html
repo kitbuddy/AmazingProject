@@ -1,0 +1,26 @@
+@if (allComments) {<ng-container>
+  <!-- comments-table.component.html (example template) -->
+  <table>
+    <thead>
+    <tr>
+      <th>Comment ID</th>
+      <th>Comment Text</th>
+      <th>Comment Name</th>
+      <th>Comment Email</th>
+      <th>Comment Body</th>
+      <!-- Add more headings as needed -->
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let comment of allComments">
+      <td>{{ comment.id }}</td>
+      <td>{{ comment?.postId }}</td>
+      <td>{{ comment?.name }}</td>
+      <td>{{ comment?.email }}</td>
+      <td>{{ comment?.body }}</td>
+      <!-- Display more data fields as needed -->
+    </tr>
+    </tbody>
+  </table>
+</ng-container>
+}
